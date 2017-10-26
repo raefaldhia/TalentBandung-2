@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/taskNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/task_5"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/taskNavigation_imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_action_name" />
+
+        <TextView
+            android:id="@+id/taskNavigation_textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/taskNavigation_imgBack"
+            android:layout_toEndOf="@+id/taskNavigation_imgBack"
+            android:layout_toLeftOf="@id/taskNavigation_imgBack"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:text="@string/task_5"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textAllCaps="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/task_5_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/task5_btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E91E63"
+            android:textColor="@color/colorWhite"
+            android:text="Add"
+
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/task5_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/task_5_relativeLayout"
+        android:layout_below="@id/taskNavigation">
+    </ListView>
+
+</RelativeLayout>

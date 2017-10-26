@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/taskNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/task_4"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/taskNavigation_imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_action_name" />
+
+        <TextView
+            android:id="@+id/taskNavigation_textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/taskNavigation_imgBack"
+            android:layout_toEndOf="@+id/taskNavigation_imgBack"
+            android:layout_toLeftOf="@id/taskNavigation_imgBack"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:text="@string/task_4"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textAllCaps="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/taskNavigation">
+        <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/task_4_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/task_4_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tab1" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tab2" />
+
+        </android.support.design.widget.TabLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

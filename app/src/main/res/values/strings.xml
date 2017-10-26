@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TalentBandung</string>
+    <string name="app_copyright">Copyright (c) 2017 Raefaldhi Amartya J</string>
+    <string name="task_1">Intent with data</string>
+    <string name="task_2">Intent with result</string>
+    <string name="task_3">Fragment dinamis</string>
+    <string name="task_4">Tabview</string>
+    <string name="task_5">Recycle view - list</string>
+    <string name="task_6">Recycle view - grid</string>
+</resources>
